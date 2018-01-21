@@ -1,13 +1,11 @@
 function isNice(arr){
-    for (i=0; i < arr.length; i++) {
+  for (var i=0; i < arr.length; i++) {
+  if (arr.indexOf(arr[i] + 1) < 0 && arr.indexOf(arr[i] - 1) <0) {
+    return false;
+    
+  } else {
   
-      if (i === arr[i] + 1) {
-        true;
-      }
-      if(i === arr[i] -1) {
-        true;
-        } else {
-        false;
-       }
   }
   }
+  return true;
+}
